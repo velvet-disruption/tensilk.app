@@ -132,32 +132,46 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             color: #999;
+            margin-bottom: 3rem;
+        }
+        
+        .notify-section {
             margin-bottom: 4rem;
         }
         
-        .studio {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
+        .notify-link {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #999;
+            color: #666;
+            padding: 0.75rem 2.5rem;
+            font-family: inherit;
+            font-size: 0.75rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
             text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .notify-link:hover {
+            border-color: #2a2a2a;
             color: #2a2a2a;
-            opacity: 0.6;
+        }
+        
+        .studio {
+            display: inline-block;
+            text-decoration: none;
+            opacity: 0.4;
             transition: opacity 0.2s ease;
         }
         
         .studio:hover {
-            opacity: 1;
+            opacity: 0.7;
         }
         
         .vd-logo {
             width: 28px;
             height: 22px;
-        }
-        
-        .studio-name {
-            font-size: 0.875rem;
-            letter-spacing: 0.02em;
         }
         
         @media (max-width: 480px) {
@@ -177,12 +191,17 @@
         <p class="tagline">Your thoughts deserve better than a textbox.</p>
         <p class="coming">Coming Q2 2026</p>
         
-        <a href="https://velvetdisruption.com" class="studio" target="_blank" rel="noopener noreferrer">
+        <div class="notify-section">
+            <a href="mailto:hi@velvetdisruption.com?subject=Tensilk – Notify Me" class="notify-link">
+                Notify Me
+            </a>
+        </div>
+        
+        <a href="https://velvetdisruption.com" class="studio" target="_blank" rel="noopener noreferrer" aria-label="Velvet Disruption">
             <svg class="vd-logo" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg">
                 <path d="M 5 0 L 20 30 L 35 0" stroke="#2a2a2a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M 35 10 Q 48 10 48 25 Q 48 40 35 40" stroke="#2a2a2a" stroke-width="2" fill="none" stroke-linecap="round"/>
             </svg>
-            <span class="studio-name">Velvet Disruption</span>
         </a>
     </div>
 </body>
